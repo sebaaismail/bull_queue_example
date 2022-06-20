@@ -14,9 +14,12 @@
   <p align="center">
     A minimal example for Bull library in Nodejs, inspired from the great blog of Rodrigo Luque, who did great job by showing an example for job queuing using bull in nodejs, where redis server and koa are used for the project.
     <br />
-    Actual project do the same example without redis and use Express.so express lovers :) enjoy!
+    Actual project do the same example without redis and use Express.
+    <br />
+    so express lovers :) enjoy!
         <br />
     <a href="https://roluquec.medium.com/job-queuing-101-start-using-bull-in-your-node-js-project-part-i-2be3ef36a42d"><strong>Explore the Original Blog for more details »</strong></a>
     <br />
-  </p>
+    <br />
+    <img src="https://github.com/sebaaismail/bull_queue_example/blob/master/src/assets/queue.png" alt="queue">
 </div>
