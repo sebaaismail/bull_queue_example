@@ -9,7 +9,7 @@ const port = 3000;
 const bodyParser = require("body-parser");
 const router = express.Router();
 
-const { ordersQueue, createNewOrder } = require("./queues/orders-queue");
+const { ordersQueue, createNewOrder } = require("./queues/orders-queue.js");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

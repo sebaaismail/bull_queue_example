@@ -1,10 +1,8 @@
 const Queue = require("bull");
-const { ordersProcess } = require("./orders-queue-consumer");
+const { ordersProcess } = require("./orders-queue-consumer.js");
 
 // Our job queue
-const ordersQueue = new Queue("orders", {
-  redis: process.env.REDIS_URL,
-});
+const ordersQueue = new Queue("orders");
 
 ordersQueue.process(ordersProcess);
 
@@ -17,7 +15,7 @@ const createNewOrder = (order) => {
 
 const getJobPriority = (order) => {
   if (!order.price) return 3;
-  return order > 100 ? 1 : 2;
+  return order.price > 100 ? 1 : 2;
 };
 
 module.exports = {

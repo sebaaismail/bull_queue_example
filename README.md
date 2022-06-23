@@ -14,7 +14,7 @@
   <p align="center">
     A minimal example for Bull library in Nodejs, inspired from the great blog of Rodrigo Luque, who did great job by showing an example for job queuing using bull in nodejs, where redis server and koa are used for the project.
     <br />
-    Actual project do the same example without redis and use Express.
+    Actual project do the same example using Express.
     <br />
     so express lovers :) enjoy!
         <br />
